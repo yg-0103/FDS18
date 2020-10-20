@@ -1,12 +1,78 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
+body *,        /* 성능면에서 body를 붙여주는게 좋다 */
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 10px;
+}
 body {
   font-family: 'Spoqa Han Sans', 'Sans-serif'; /* 앞은 font , 뒤는 글꼴 군 (고딕체) */
+  font-size: 1.4rem;
+  color: #181818;
+  background: #fff;
 }
 
 /* 스킵 네비게이션 */
 .skip-nav {
   display: none;
+}
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan {
+  width: 940px;
+  margin: 0 auto;
+}
+.header {
+
+  background: yellow;
+  height: 100px;
+}
+.visual {
+  height: 120px;
+  background: lime;
+}
+.main {
+  background: skyblue;
+  padding: 30px 15px;  
+  overflow: hidden;
+  min-height: 450px;
+}
+/* .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.main .group {
+  float: left;
+  margin: 0 15px;
+}
+.main .group1 {
+  width: 250px;
+  background: blue;
+}
+.main .group2 {
+  width: 380px;
+  background: lightgreen;
+}
+.main .group3 {
+  width: 190px;
+  background: tomato;
+}
+.slogan {
+  background: orange;
+  height: 100px;
+}
+.footer {
+  width: 100%;
+  background: pink;
+  height: 150px;
 }
