@@ -23,7 +23,7 @@
         <a href="">홈</a>
       </li>
       <li>
-        <span class="divider" aria-hidden="true">|</span>
+        <span class="divider" aria-hidden="true">|</span> <!-- aria-hidden="true" 는 리더기로 읽어주지 않는다 -->
         <a href="">로그인</a>
       </li>
       <li>
@@ -40,12 +40,12 @@
       </li>
     </ul>
 
-    <nav class="navigation">
-      <h2 class="a11y-hidden">메인 메뉴</h2>
+    <nav class="navigation"> 
+      <h2 class="a11y-hidden">메인 메뉴</h2> <!-- a11y-hidden 숨길 컨텐츠라는 뜻 -->
       <ul class="menu">
         <li class="menu-item">
-          <button type="button" class="menu-button">HTML에 대해</button>
-          <ul class="sub-menu sub-menu1">
+          <button type="button" class="menu-button">HTML에 대해</button> <!-- 클릭했을떄 동작하는 부분이라 button 태그르 사용 -->
+          <ul class="sub-menu sub-menu1">  <!-- 위의 컨텐츠에 속하는 내용이므로 하위에 마크업을 한다 -->
             <li>
               <a href="#">HTML5 소개</a>
             </li>
@@ -57,7 +57,7 @@
             </li>
           </ul>
         </li>
-        <li class="menu-item">
+        <li class="menu-item menu-act">
           <button type="button" class="menu-button">CSS에 대해</button>
           <ul class="sub-menu sub-menu2">
             <li>
