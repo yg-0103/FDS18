@@ -107,15 +107,14 @@ a {
   padding: 0 20px;
   line-height: 45px;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
-  display: block;
   cursor: pointer;
+  display: block;
 }
 .menu-act .menu-button {
   color: #ff0;
 }
 .menu-act .menu-button::after {
   content: "";
-  background-color: blue;
   display: block;
   border-top: 2px solid #000;
 }
@@ -153,7 +152,7 @@ a {
 .sub-menu1,
 .sub-menu2,
 .sub-menu3 {
-  display: none;
+  /* display: none; */
 }
 .sub-menu4,
 .sub-menu5,
@@ -161,9 +160,33 @@ a {
   /* display: block; */
   right: 0;
 }
+/* 텍스트 및 배경 애니메이션 - 비주얼 */
+@keyframes textAni {
+  0% {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    transform: translate(400px, 75px);
+  }
+}
 .visual {
   height: 120px;
   background: lime;
+  position: relative;
+}
+.visual-text {
+  width: 500px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  animation-name: textAni;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  background: blueviolet;
+
 }
 .main {
   background: skyblue;
