@@ -2,12 +2,14 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 /* 숨긴 제목 및 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0); /* 요소의 좌표를 설정해서 안보이게 해준다 */
+  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
 }
 
 body *,        /* 성능면에서 body를 붙여주는게 좋다 */
@@ -219,8 +221,6 @@ a {
   animation-name: textAni;
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
-  background: blueviolet;
-
 }
 .main {
   background: skyblue;
@@ -240,7 +240,80 @@ a {
 }
 .main .group1 {
   width: 250px;
-  background: blue;
+
+}
+/* 메인 그룹 1 */
+.login {
+ background: orangered;
+ padding: 10px 10px;
+ border-radius: 5px;
+ box-shadow: 6px 6px 2px rgba(0,0,0, .4);
+}
+.login-heading {
+  font-size: 1.6rem;
+  color: yellow;
+  margin: 0;
+  padding: 5px 10px 10px;
+}
+.login-form {
+  border-radius: 5px 5px 0 0;
+  background: #fff;
+  padding: 5px 5px 5px 0;
+}
+.login-form fieldset {
+  border: none;
+  position: relative;
+}
+.login-form legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+.login-form input {
+  width: 100px;
+}
+.user-email {
+  padding-bottom: 5px;
+}
+#userEmail {
+  margin-left: 13px
+}
+.user-pw {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+#userPw {
+
+}
+.btn-login {
+ position: absolute;
+ height: 49px;
+ top: 4px;
+ right: 2px;
+ background: orangered;
+ border: none;
+ color: #fff;
+ border-radius: 4px;
+}
+.login-member {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  background: #fff;
+  margin: 0;
+  padding: 3px 5px 15px 5px;
+  border-radius: 0 0 5px 5px;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: space-around
+}
+.icon-right-open {
+  color: orangered;
+}
+.find-pw {
+
 }
 .main .group2 {
   width: 380px;
