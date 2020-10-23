@@ -333,7 +333,25 @@ a {
 .login-member a{
   display: block;
   padding: 8px 0;
-
+}
+/*유효성 검사 배너 */
+.validation-list {
+  margin: 25px 0 0 0;
+  list-style: none;
+  padding-left: 0;
+}
+.validation-item a{
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: url(/css/images/validation_icon.png) 25px 50% / 20px 20px no-repeat,
+              linear-gradient(to bottom, #eee, #ccc);
+  padding: 8px 10px 8px 50px;
+  margin-top: 10px;  
+}
+.validation-item a:hover,
+.validation-item a:focus {
+  color: #f00;
 }
 .slogan {
   background: orange;
