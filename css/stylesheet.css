@@ -353,6 +353,60 @@ a {
 .validation-item a:focus {
   color: #f00;
 }
+/* term */
+.term {
+  background: linear-gradient(to bottom, #eee, #ccc);
+  border: 1px solid #aaa;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+
+}
+.term-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list {
+  margin: 15px 0 0 0;
+  
+}
+.term-list div {
+  overflow: hidden;
+}
+.term div:nth-child(even) {
+  margin-top: 15px;
+}
+.term-list-subject,
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+.term-list-subject {
+  color: #296897;
+}
+.term-list-thumbnail {
+ 
+  float: left;
+}
+.term-list-thumbnail img {
+  display: block;
+}
+.term-list-brief {
+ 
+  line-height: 1.5;
+}
+.term-list dd {
+  margin-left: 0;
+}
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail {
+  float: right;
+}
 .slogan {
   background: orange;
   height: 100px;
