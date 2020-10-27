@@ -84,10 +84,10 @@ a {
   background-color: #ed552f;
   background: linear-gradient(
     to bottom,
-     #e8852e 0%,
-     #ed552f 35%, 
-     #ed552f 70%, 
-     #e8852e 100%);
+    #e8852e 0%,
+    #ed552f 35%, 
+    #ed552f 70%, 
+    #e8852e 100%);
   margin: 10px 0 0 0;
   padding-left: 225px;
   list-style: none;
@@ -362,7 +362,7 @@ a {
   border-radius: 5px;
 
 }
- .term-heading {
+.term-heading {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.6rem;
@@ -387,14 +387,12 @@ a {
   color: #296897;
 }
 .term-list-thumbnail {
- 
   float: left;
 }
 .term-list-thumbnail img {
   display: block;
 }
 .term-list-brief {
- 
   line-height: 1.5;
 }
 .term-list dd {
@@ -420,7 +418,6 @@ a {
   border: 0;
   padding: 0;
   margin: 0;
- 
 }
 .search-form-container {
   display: flex;
@@ -469,6 +466,80 @@ a {
   border-radius: 3px;
   
 } */
+.board {
+  background: yellow;
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+}
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+  display: none;
+}
+
+.is-active .notice-list,
+.is-active .pds-list,
+.is-active .notice-more,
+.is-active .pds-more {
+  display: block;
+}
+.tab {
+  float: left;
+  margin: 0;
+}
+.tab a {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #aaa;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+.is-active .tab a {
+  color: #ed552f;
+  border-color:  #ed552f #ed552f #fff #ed552f;
+  background: #fff;
+}
+.notice-list,
+.pds-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  background: skyblue;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+}
+.notice-list li,
+.pds-list li {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+.notice-list a,
+.pds-list a{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice-more,
+.pds-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: pink;
+  padding: 8px;
+}
+.notice-more::before,
+.pds-more::before {
+  color: hsla(110, 50%, 30%, 1);
+}
 .slogan {
   background: orange;
   height: 100px;
