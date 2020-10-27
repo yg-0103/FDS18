@@ -25,7 +25,6 @@ body {
   font-family: 'Spoqa Han Sans', 'Sans-serif'; /* 앞은 font , 뒤는 글꼴 군 (고딕체) */
   font-size: 1.4rem;
   color: #181818;
-  background: #eee;
 }
 /* 링크 스타일 */
 a {
@@ -467,11 +466,10 @@ a {
   
 } */
 .board {
-  background: yellow;
   position: relative;
-  height: 200px;
   margin-top: 20px;
 }
+
 .notice-list,
 .pds-list,
 .notice-more,
@@ -486,8 +484,15 @@ a {
   display: block;
 }
 .tab {
-  float: left;
+  position: absolute;
+  top: 0;
   margin: 0;
+}
+.notice-heading {
+  left: 0;
+}
+.pds-heading {
+  left: 83px;
 }
 .tab a {
   display: block;
@@ -497,7 +502,10 @@ a {
   color: #999;
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 5px 10px;
+  padding: 5px 15px;
+}
+.is-active .tab {
+  z-index: 5;
 }
 .is-active .tab a {
   color: #ed552f;
@@ -508,12 +516,17 @@ a {
 .pds-list {
   list-style: none;
   padding-left: 0;
+  padding-top: 45px;
   margin: 0;
-  background: skyblue;
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 45px;
+  top: 45px; */
   width: 100%;
+  min-height: 170px;
+  
+}
+.notice-list {
+
 }
 .notice-list li,
 .pds-list li {
@@ -533,7 +546,6 @@ a {
   position: absolute;
   top: -8px;
   right: -8px;
-  background: pink;
   padding: 8px;
 }
 .notice-more::before,
