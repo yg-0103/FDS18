@@ -150,6 +150,7 @@
  
   <!-- VISUAL -->
   <section class="visual">
+    <h2 class="a11y-hidden">이미지영역</h2>
     <p class="visual-text">
       Web Standards &amp; Accessibility
     </p>
@@ -229,11 +230,11 @@
         <fieldset>
           <legend>검색 폼</legend>
           <div class="search-form-container">
-            <label>
+            <label for="search">
               <span class="icon-search" aria-hidden="true"></span>
               자료검색
+              <input id="search" type="search" name="search" placeholder="검색어를 입력하세요." required>
             </label>
-            <input id="search" type="search" name="search" placeholder="검색어를 입력하세요." required>
             <button type="submit" class="btn-search">검색</button>
           </div>
         </fieldset>
@@ -298,23 +299,25 @@
       </div>
 
       <section class="news">
-        <h2 class="news-heading">새소식</h2>
-        <a href="#" class="news-link">
-          <article class="news-item">
-            <h3 class="news-item-heading">W3C 사이트가 리뉴얼 되었습니다.</h3>
-            <time class="news-item-date" datetime="2018-05-31T16:19:23">2018.05.31</time>
-            <p class="news-item-brief">
-              디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 
-              기존보다 최신 정보 및 개발자를 위한 기술 가이드도 
-              찾기 쉽도록 구성되어 있습니다.  
+        <h2 class="news-heading" id="newsHeading">새소식</h2>
+        <article class="news-article">
+          <a class="news-article-link" href="#">
+            <h3 class="news-article-subject">W3C 사이트가 리뉴얼 되었습니다</h3>
+            <time class="news-article-date" datetime="2020-10-28T14:19:07">2020.10.28</time>
+            <p class="news-article-brief">
+              디자인 및 다양한 view 환경을 고려하여 구성되어 있으며,
+              기존보다 최신 정보 및 개발자를 위한 가이드도 찾기 쉽도록 구성되어
+              있습니다.
             </p>
-            <figure class="news-item-thumbnail">
-              <img src="images/news.gif" alt="W3C 사이트가 HTML 발표 후 새롭게 리뉴얼 된 모습">
-              <figcaption>W3C 리뉴얼</figcaption>
+            <figure class="news-article-thumbnail">
+              <img src="/images/news.gif" alt="" aria-labelledby="newsArticleThumbnail">
+              <figcaption id="newsArticleThumbnail">
+                W3C 리뉴얼
+              </figcaption>
             </figure>
-          </article>
-        </a>
-        <a href="#" class="icon-plus news-more" title="새소식">더보기</a>
+          </a>
+        </article>
+        <a title="새소식" class="icon-plus news-more" aria-labelledby="newsHeading" href="#">더보기</a>
       </section>
     </div>
     <div class="group group3">group3</div>
