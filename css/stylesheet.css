@@ -628,6 +628,10 @@ a {
 }
 .event {
   position: relative;
+  border-bottom: 1px solid #aaa;
+}
+.related {
+  padding-top: 10px;
 }
 .event-heading,
 .related-heading {
@@ -667,6 +671,30 @@ a {
 .btn-next {
   background-position: -36px 0;
 }
+.related-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  background: #fff;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 0.4s, padding 0.4s 0.4s;
+  border: 1px solid #aaa;
+}
+.related-list:hover {
+  height: 147px;
+  padding: 10px 0;
+}
+related-list li {
+  padding: 2px 5px 3px 5px;
+}
+.related-list li a {
+  display: block;
+  line-height: 22px;
+  padding-left: 20px;
+}
+
 /* .event {
   position: relative;
 }
