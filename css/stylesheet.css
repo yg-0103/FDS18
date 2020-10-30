@@ -634,7 +634,8 @@ a {
   padding-top: 10px;
 }
 .event-heading,
-.related-heading {
+.related-heading,
+.favorite-heading {
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0;
@@ -745,6 +746,138 @@ related-list li {
   padding-top: 16px;
   overflow: hidden;
 } */
+
+/* .favorite {
+  margin-top: 20px;
+  padding: 10px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  position: relative;
+}
+.favorite-heading {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.favorite-heading span {
+  color: #ed552f;
+}
+.favorite-list {
+  list-style: none;
+  padding-left: 0;
+}
+.favorite-list li {
+  margin-bottom: 10px;
+  display: flex;
+}
+.favorite-list strong {
+  background: #aaa;
+  padding: 0 3px;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 5px;
+}
+.favorite-list a {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.rank1::after,
+.rank2::after,
+.rank3::after,
+.rank4::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/css/images/rank.png);
+  width: 10px;
+  height: 10px;
+}
+.rank2::after {
+  background-position: 0 10px;
+}
+.rank3::after {
+  background-position: 0 35px;
+}
+.favorite-more {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.favorite-more::before {
+  content: "\e801";
+  font-family: "fontello";
+  color: hsla(110, 50%, 30%, 1);
+  margin-right: 5px;
+} */
+/* 인기 사이트 */
+.favorite {
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-list {
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: numbering;
+}
+.favorite-list li {
+  margin-top: 8px;
+  position: relative;
+
+}
+.favorite-list a {
+  display: inline-block;
+  margin:0 10px 0 20px;
+  display: block;
+  font-size: 1.2rem;
+}
+.favorite-list li::before {
+  position: absolute;
+  top: 0;
+  left: 0;  
+
+  counter-increment: numbering;
+  content: counter(numbering);
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  margin-right: 5px;
+  background: #999;
+  border-radius: 2px;
+}
+
+.up,
+.stop,
+.down {
+  background: url("/css/images/rank.png") no-repeat;
+  overflow: hidden;
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  padding-top: 11px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+.down {
+  background-position: bottom;
+}
+.stop {
+  background-position: center;
+}
+.favorite-more {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 8px;
+}
+.favorite-more::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+
 .slogan {
   background: orange;
   height: 100px;
